@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+    <script src="https://kit.fontawesome.com/40962f4670.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopyfy</title>
+    <link rel="stylesheet" href="shopyfy_product.css">
+    <link rel="stylesheet" href="product_sidebar.css">
+</head>
+<body>
+    
+<!--
+    navbar
+ -->
+    <nav>
+        <div class="nav-title">
+            <h1><i class="fa-brands fa-shopify"></i>&nbsp;ShopyFy</h1>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a class="drop-btn" href="#">fashion</a>
+                    <div class="dropdown-con ">
+                        <ul>
+                            <li class="menfashion">Men's </li>
+                            <li class="womenfashion">Women's</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="drop-btn " href="#">Mobiles</a>
+                    <div class="dropdown-con">
+                        <ul>
+                            <li  class="oneplus">OnePlus</li>
+                            <li  class="iphone">Iphone</li>
+                            <li  class="samsung">Samsung</li>
+                            <li  class="vivo">Vivo</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="drop-btn" href="#">Electronics</a>
+                    <div class="dropdown-con">
+                        <ul>
+                            <li class="laptop">Laptop</li>
+                            <li class="watch">Smart Watch</li>
+                            <li class="camera">Cameras</li>
+                            <li class="desktop">Desktops</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="drop-btn" href="#">Appliances</a>
+                    <div class="dropdown-con">
+                        <ul>
+                            <li>TV</li>
+                            <li>Refrigerators</li>
+                            <li>Cooler</li>
+                            <li>Microwaves</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="drop-btn" href="#">More</a>
+                    <div class="dropdown-con">
+                        <ul>
+                            <li>Book's</li>
+                            <li>Health</li>
+                            <li>Beauty</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-search">
+            <input type="text" placeholder="Search for Products, Brand ">
+            <a class="search-icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <!-- <div class="login-btn">
+            <a href="#"><i class="fa-regular fa-circle-user"></i>&nbsp;</a>
+            <a href="#"><i class="fa-regular fa-heart"></i>&nbsp;</a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;</a>
+        </div> -->
+
+        <!-- 
+            note:  hamburger button
+         -->
+        <div class="hamburger">
+            <div class="bar1 "></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+
+
+
+<!-- 
+    body
+ -->
+
+    <!-- 
+        side bar 
+     -->
+     <div class="sidebar-con">
+        
+        <strong><p>- Categories</p></strong>
+        <a href="#">Fashion</a>
+        <a href="#">Devices</a>
+        <a href="#">Footware</a>
+        <a href="#">Electronics</a>
+        <a href="#">Books</a>
+        <hr>
+        <strong><p>- Price </p> </strong>  
+        <div class="price-filter">     
+            <input type="checkbox"  name="price_range">
+            <label for="price_range">Below &#x20b9;1000</label><br>
+        </div> 
+        <div class="price-filter">     
+            <input type="checkbox"  name="price_range">
+            <label for="price_range">&#x20b9;1000 - 5000</label><br>
+        </div>
+        <div class="price-filter">     
+            <input type="checkbox"  name="price_range">
+            <label for="price_range">&#x20b9;5000 - 10,000</label><br>
+        </div>
+        <div class="price-filter">     
+            <input type="checkbox"  name="price_range">
+            <label for="price_range">&#x20b9;10,000 - 15,000</label><br>
+        </div>
+        <div class="price-filter">     
+            <input type="checkbox"  name="price_range">
+            <label for="price_range">Over &#x20b9;15,000</label><br>
+        </div>
+        
+        <button type="submit">Apply Filter</button>
+    </div>
+
+    <div class="body-con">
+        
+
+         <!-- 
+            note:  side navbar
+          -->
+        <nav class="mobilenav">
+            <div class="mobilenav-icon">
+                <a href="#"><i class="fa-regular fa-circle-user"></i>&nbsp;</a>
+                <a href="#"><i class="fa-regular fa-heart"></i>&nbsp;</a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;</a>
+            </div>
+            <a href="#">Fashion</a>
+            <a href="#">Devices</a>
+            <a href="#">Footware</a>
+            <a href="#">Electronics</a>
+            <a href="#">Books</a>
+        </nav>
+
+
+        <!-- 
+            modal 
+         -->
+        <div class="fix-modal hidden">
+            <div class="modal">
+                <div class="offer-lebal ">
+                    <p><strong>FREE SHIPPING </strong> ALL INDIA ORDERS $50+</p>
+                </div>
+
+                <div class="modal-image">
+                    <img src="shopyfy/product3.webp" alt="">
+                    <!-- <img src="shopyfy/model5.webp" alt=""> -->
+                </div>
+                <button class="close-modal">&times;</button>
+                <div class="modal-info">
+
+                    <div class="modal-name">
+                        <p>Levis T-Shirt</p>
+                    </div>
+                    <div class="modal-discription">
+                        <p>This is Premium T shirt by Levis</p>
+                    </div> 
+                    <div class="product-price">
+                        <p class="del">&#x20b9;220</p>
+                        <strong><p class="price">&#x20b9;50</p>  </strong>  
+                        
+                    </div>
+                    <div class="product-rating">
+                            
+                        <div class="rating-wrapper" aria-label="5 start rating">
+                            <ion-icon name="star" aria-hidden="true"></ion-icon>
+                            <ion-icon name="star" aria-hidden="true"></ion-icon>
+                            <ion-icon name="star" aria-hidden="true"></ion-icon>
+                            <ion-icon name="star" aria-hidden="true"></ion-icon>
+                            <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        </div>
+                        <span class="review">555 review</span>
+
+                    </div>
+
+                    <div class="modal-btn">
+                        <span>FREE delivery in 3 days</span>
+                        <a href="#">Buy Now</a>
+                        <span>Buy 3 items, Get 20 % OFF</span>
+                        <a href="#"><i class="fa-regular fa-heart"></i> &nbsp; Add To Wishlist</a>
+                    </div>
+
+
+                </div>
+                
+            </div>
+            <div class="overlay"></div>
+        </div>
+        
+         <!-- 
+            product con
+          -->
+        <div class="product-con">
+            
+            <div class="product-card-con ">
+                <div class="product-image show-modal">
+                    <img src="shopyfy/product30.jpg" alt="">
+                    <!-- <img src="shopyfy/model5.webp" alt=""> -->
+                </div>
+
+
+                <div class="product-price">
+                    <p class="del">&#x20b9;220</p>
+                    <p class="price">&#x20b9;50</p>  
+                    <a class="like" href="#"><i class="fa-regular fa-heart"></i></a>
+                </div>
+                <div class="product-name show-modal">
+                    <p>product name</p>
+                </div>
+
+                <div class="product-rating">
+                        
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+                    <span class="review">555 review</span>
+
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        
+       
+
+        
+
+
+
+        <!-- 
+            collection 3 
+         -->
+         <div class="collections">
+            <div class="collection-con" id="coll1">
+                <div class="collection-head">
+                    <h3 class="collection-heading">Summer Collection</h3>
+                    <p class="collection-text">Starting at &#x20b9;499</p>
+                    <a href="#" class="btn-link">Shop Now &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <img src="shopyfy/collection-1.jpg" alt="">
+            </div>
+            <div class="collection-con" id="coll2">
+                <div class="collection-head">
+                    <h3 class="collection-heading">What's New?</h3>
+                    <p class="collection-text">Get the glow.</p>
+                    <a href="#" class="btn-link">Discover Now &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <!-- <a href="#" class="btn-link">Discover Now &nbsp;<i class="fa-solid fa-arrow-right"></i></a> -->
+                <img src="shopyfy/collection-2.jpg" alt="">
+            </div>
+            <div class="collection-con" id="coll3">
+                <div class="collection-head">
+                    <h3 class="collection-heading">Buy 1 Get 1</h3>
+                    <p class="collection-text">Starting at &#x20b9;299</p>
+                    <a href="#" class="btn-link">Discover Now &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <img src="shopyfy/collection-3.jpg"  alt="">
+            </div>
+        </div>
+
+        <!-- 
+            con3
+         -->
+         <h1 class="con3-heading">Why Shop with ShopyFy?</h1>
+        <div class="con3">
+            <div class="con3-text">
+                <h1><i class="fa-solid fa-rotate"></i></h1>
+                <p>EASY EXCHANGE</p>
+            </div>
+            <div class="con3-text">
+                <h1><i class="fa-solid fa-hand-holding-heart"></i></h1>
+                <p>100% HANDPICKED</p>
+            </div>
+            <div class="con3-text">
+                <h1><i class="fa-solid fa-heart-circle-check"></i></h1>
+                <p>ASSURED QUALITY</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+<!-- 
+    footer
+ -->
+    
+ <footer>
+    <div class="footer-con">
+
+        <div class="footer-con1">
+            <div class="link-con">
+                <h2>Company </h2>
+                <ul class="links" id="link1">
+                    <li>Find a location nearest you. See <a href="#">Our Stores</a></li>
+                    <li style="color:rgb(24, 24, 24)">+391 (0)35 2568 4593</li>
+                    <li style="color:rgb(24, 24, 24)">hello@domain.com</li>
+                    
+                </ul>
+            </div>
+            
+            <div class="link-con">
+                <h2>Useful links</h2>
+                <ul class="links" id="link2">
+                    <li><a href="#">New Products</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Bundle & Save</a></li>
+                    <li><a href="#">Online Gift Card</a></li>
+                </ul>
+            </div>
+
+            <div class="link-con">
+                <h2>Infomation</h2>
+                <ul class="links" id="link3">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping FAQ</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="link-con">
+                <div id="link4"></div>
+                <h2>Good emails.</h2>
+                <p style="color:hsl(0, 0%, 45%);letter-spacing:normal;">Enter your email below to be the first to know 
+                    about new collections and product
+                     launches.</p>
+                <input class="email-con" type="email" placeholder="Email">
+                <input type="submit" name="submit" value="Send" id="submit">
+               
+            </div>
+        </div>
+        <div class="footer-con2">
+            <div class="copyright">
+                <small>© Copyright 2024 sohamp2606</small>&nbsp;
+                <h4 style="display:inline-block"><i class="fa-brands fa-instagram"></i> &nbsp; <i class="fa-brands fa-x-twitter"></i> 
+                &nbsp; <i class="fa-brands fa-youtube"></i> &nbsp; <i class="fa-brands fa-facebook"></i></h4>
+            </div>
+            
+            <div class="logo">
+                <h2><i class="fa-brands fa-shopify"></i> Shopify</a></h2>
+            </div>
+            <div class="payment">
+                <img src="shopyfy/pay.png" alt="">
+            </div>
+        </div>
+
+        
+
+    </div>
+</footer>
+
+
+
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script type="module" src="shopyfy_product.js"></script>
+</body>
+</html>
