@@ -175,7 +175,7 @@ const renderModal = function (data){
                 <p>${data[1].textContent}</p>
             </div>
             <div class="modal-discription">
-                <p>This is Premium T shirt by Levis</p>
+                <p>Elevate your style with our premium products at Discounted price.</p>
             </div> 
             <div class="product-price">
                 <p class="del">${data[2].textContent}</p>
