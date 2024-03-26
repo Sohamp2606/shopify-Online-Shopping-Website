@@ -178,8 +178,8 @@ const renderModal = function (data){
                 <p>This is Premium T shirt by Levis</p>
             </div> 
             <div class="product-price">
-                <p class="del">&#x20b9;${data[2].textContent}</p>
-                <strong><p class="price">&#x20b9;${data[3].textContent}</p>  </strong>  
+                <p class="del">${data[2].textContent}</p>
+                <strong><p class="price">${data[3].textContent}</p>  </strong>  
                 
             </div>
             <div class="product-rating">
