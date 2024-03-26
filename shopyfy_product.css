@@ -86,6 +86,7 @@ nav{
 nav .nav-title h1{
     font-weight:500;
     padding:0 15px;
+    cursor: pointer;
 }
 
 nav .nav-links ul {
@@ -149,14 +150,15 @@ nav .login-btn a{
     width:150px;
     font-family:var(--ff-urbanist);
     background-color:var(--lightblue);
-    height:100vh;
+    height:100%;
     display:flex;
     flex-direction:column;
-    justify-content:center;
+    justify-content:start;
     align-items:center;
     position:fixed;
     z-index: 15;
     top:0;
+    margin-top:70px;
     right:-160px;
     padding:15px;
     transition : transform 0.3s ease-in-out;
@@ -171,7 +173,16 @@ nav .login-btn a{
     font-weight:450;
 }
 
-
+.mobilenav .mobilenav-icon{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+}
+.mobilenav .mobilenav-icon a{
+    padding:15px 5px;
+}
 
 
 nav .hamburger{
@@ -326,7 +337,7 @@ nav .bar1,.bar2,.bar3{
     grid-area:sidebar;
     width:150px;
     background-color:var(--lightblue);
-    height:100vh;
+    height:100%;
     display:flex;
     flex-direction:column;
     justify-content:start;
@@ -335,6 +346,7 @@ nav .bar1,.bar2,.bar3{
     z-index: 15;
     top:0;
     left:0;
+    margin-top:70px;
     /* right:-160px; */
     padding:15px;
     transition : transform 0.3s ease-in-out;
@@ -363,26 +375,22 @@ nav .bar1,.bar2,.bar3{
     border:1px solid black;
 }
 
-.mobilenav .mobilenav-icon{
-    width:100%;
-}
-.mobilenav .mobilenav-icon a{
-    padding:15px 5px;
-}
+
 /* 
     product con
 */
 
 .product-con {
+    width:100%;
     font-family:var(--ff-urbanist);
     margin-bottom:50px;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(200px,210px));
     column-gap:10px;
-    row-gap:10px;
+    row-gap:20px;
     justify-items:center;
     align-items:center;
-    
+    margin-left:30px;
 }
 .product-card-con{
     display:flex;
@@ -584,7 +592,7 @@ footer{
 .footer-con1{
 	padding: 0 20px;
 	display:grid;
-	grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+	grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 	column-gap:30px;
 	
 }
@@ -745,21 +753,8 @@ footer{
             "banner2 banner2"; 
         height:1000px;
     }
-    
-    
-}
-
-@media only screen and (max-width:900px){
-    /* navbar hide */
-    nav .nav-links{
-        display:none;
-    }
-
-    nav .hamburger{
-        display:block;
-    }
-    /* collectin 3 */
-    .body-con .collections{
+     /* collectin 3 */
+     .body-con .collections{
         height:auto;
         display:grid;
         grid-template-areas:
@@ -768,7 +763,7 @@ footer{
         "col3";
         row-gap:30px;
         grid-template-columns:(1,minmax(300px,500px));
-        justify-items:center;
+        
     }
     #coll1{
         grid-area :col1;
@@ -783,6 +778,20 @@ footer{
         grid-area :col3;
         width:500px;
     }
+    
+    
+}
+
+@media only screen and (max-width:900px){
+    /* navbar hide */
+    nav .nav-links{
+        display:none;
+    }
+
+    nav .hamburger{
+        display:block;
+    }
+   
 
     /* discount banner  */
     .col1-con1 .col1-banner{
@@ -829,4 +838,12 @@ footer{
     }
 }
 
+@media only screen and (max-width:600px){
 
+   footer{
+        width:120%;
+   }
+   .footer-con{
+        width:120%;
+   }
+}
