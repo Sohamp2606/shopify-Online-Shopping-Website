@@ -22,9 +22,9 @@
 <br />
 
 
-### Demo Screeshots
+
+![Ecom Website (2)](https://github.com/Sohamp2606/shopify-frontend/assets/106002920/3bb185a4-d85b-465b-bf96-45f95cae2996)
 
 
 
-![Ecom Website (2)](https://github.com/Sohamp2606/Shopyfy/assets/106002920/ee2062ac-db53-480f-af9a-e66b8946b59b)
 
